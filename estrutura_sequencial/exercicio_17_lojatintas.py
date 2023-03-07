@@ -16,6 +16,7 @@ tamanho_da_area = float(input("Digite o tamanho da area a ser pintada em metros 
 # Processamento de dados:
 quantidade_de_litros_de_tinta = tamanho_da_area / 6
 
+latas_de_tinta = quantidade_de_litros_de_tinta // 18
 quantidade_de_latas_de_tinta = quantidade_de_litros_de_tinta / 18
 
 sobra_da_tinta = quantidade_de_litros_de_tinta % 18
@@ -38,7 +39,7 @@ print()
 print()
 print(f"Comprar apenas latas de 18 litros:   ")
 print(f"Quantidade de latas de 18 litros {apenas_de_latas_de_tinta}.")
-print(f"Custo com {custo_com_latas_de_tinta} latas de 18 litros é de {custo_com_latas_de_tinta} reais.")
+print(f"Custo com {apenas_de_latas_de_tinta} latas de 18 litros é de {custo_com_latas_de_tinta} reais.")
 print()
 print()
 print(f"Comprar apenas galões de 3,6 litros ")
@@ -47,8 +48,8 @@ print(f"Custo com {apenas_de_galoes_de_tinta} latas de 18 litros é de {custo_co
 print()
 print()
 print(f"Comprar latas de tintas de 18 litros  e galões de 3,6 litros ")
-print(f"Quantidade de galões de 3,6 litros {apenas_de_galoes_de_tinta}.")
-print(f"O custo com galões de 3,6 litros {apenas_de_galoes_de_tinta}.")
-print(f"Quantidade de latas de 18 litros {apenas_de_galoes_de_tinta}.")
-print(f"O custo com latas de 18 litros {apenas_de_galoes_de_tinta}.")
+print(f"Quantidade de galões de 3,6 litros {completar_com_galoes}.")
+print(f"O custo com galões de 3,6 litros {custo_completar_galoes} reais.")
+print(f"Quantidade de latas de 18 litros {latas_de_tinta}.")
+print(f"O custo com latas de 18 litros {custo_com_latas_de_tinta} reais.")
 print(f"Custo total com latas e galões é de {custo_total} reais.")
