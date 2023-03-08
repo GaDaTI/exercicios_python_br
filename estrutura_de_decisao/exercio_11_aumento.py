@@ -52,7 +52,7 @@ else:
     valor_do_aumento = novo_salario - salario
 
 # Saida de dados: Salario inicial, Novo Salario, Percentual de aumento, valor do aumento
-print(f"O valor salário antes do reajuste era de {salario} reais.")
+print(f"O valor salário antes do reajuste era de {salario:.2f} reais.")
 print(f"O percentual de aumento aplicado foi de {percentual} %")
-print(f"O valor do aumento foi de {valor_do_aumento} reais")
-print(f"O novo salário, após o aumento é de {novo_salario} reais")
+print(f"O valor do aumento foi de {valor_do_aumento:.2f} reais")
+print(f"O novo salário, após o aumento é de {novo_salario:.2f} reais")
