@@ -16,8 +16,10 @@ while valor > contador:
     inpt_nome = input("Digite seu nome: ")
     if len(inpt_nome) > 3:
         contador += 1
+        print("inpt_nome = ok")
     else:
         contador += -1
+        print("inpt_nome = Falha")
     
     """
     Idade: entre 0 e 150;
@@ -25,8 +27,10 @@ while valor > contador:
     inpt_idade = int(input("Digite sua idade: "))
     if 0 < inpt_idade <= 150:
         contador += 1
+        print("inpt_idade = ok")
     else:
         contador += -1
+        print("inpt_idade = Falha")
 
     """
     Salário: maior que zero;
@@ -34,8 +38,10 @@ while valor > contador:
     inpt_salario = float(input("Digite o valor de seu salário: "))
     if inpt_salario > 0:
         contador += 1
+        print("inpt_salario = ok")
     else:
         contador += -1
+        print("inpt_salario = Falha")
     
     """
     Sexo: 'f' ou 'm';
@@ -43,8 +49,10 @@ while valor > contador:
     inpt_sexo = input("Digite  ['M' : Masculino ] ou ['F' : feninino]: ").upper()
     if inpt_sexo == 'F' or inpt_sexo == 'M':
         contador += 1
+        print("inpt_sexo = ok")
     else:
         contador += -1
+        print("inpt_sexo = Falha")
 
     """
     Estado Civil: 's', 'c', 'v', 'd';
@@ -52,13 +60,17 @@ while valor > contador:
     lista = ['S', 'C', 'V', 'D']
     print("['S' : Solteiro ] | ['C' : Casado] | ['V' : Viuvo ] | ['D' : Divorciado]: ")
     inpt_estado_civil = input("Digite seu estado civil: ").upper()
-    if inpt_sexo in lista:
+    if inpt_estado_civil in lista:
         contador += 1
+        print("inpt_estado_civil = ok")
     else:
         contador += -1
+        print("inpt_estado_civil = Falha")
     
     if contador < 5:
         print("Tente novamente!")
+    else:
+        contador = 6
 
 
 print(f"Seu nome é {inpt_nome}")
