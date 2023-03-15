@@ -1,34 +1,48 @@
 """
-4 - Supondo que a população de um país A seja da ordem 
-de 80000 habitantes com uma taxa anual de crescimento 
-de 3% e que a população de B seja 200000 habitantes com 
-uma taxa de crescimento de 1.5%. Faça um programa que 
-calcule e escreva o número de anos necessários para que 
-a população do país A ultrapasse ou iguale a população 
-do país B, mantidas as taxas de crescimento.
+5 - Altere o programa anterior permitindo ao usuário 
+informar as populações e as taxas de crescimento
+ iniciais. Valide a entrada e permita repetir a 
+ operação.
 """
-# Entrada de dados
-populacao_a = 8000
-populacao_b = 200000
+
 valor = True
 contador = aumento = 0
 
 # Processamento de dados:
 while valor:
+    if contador == 0:
+        # Entrada de dados
+        inpt_populacao_a = float(input("Digite o numero de habitantes de 'A': "))
+        inpt_populacao_b = float(input("Digite o numero de habitantes de 'B': "))
+
+        if inpt_populacao_a == 0 or inpt_populacao_b == 0:
+            valor = False
+        else:
+            taxa_crescimento_de_a = float(input("Digite a taxa de crescimento de 'A': "))
+            taxa_crescimento_de_b = float(input("Digite a taxa de crescimento de 'B': "))
+
+        
+
+
     ano_inicio = 2023
 
-    aumento_de_a = populacao_a * 0.03
-    populacao_a += aumento_de_a
+    aumento_de_a = inpt_populacao_a * taxa_crescimento_de_a
+    inpt_populacao_a += aumento_de_a
 
-    aumento_de_b = populacao_b * 0.015
-    populacao_b += aumento_de_b
+    aumento_de_b = inpt_populacao_b * taxa_crescimento_de_b
+    inpt_populacao_b += aumento_de_b
 
-    if populacao_a <= populacao_b:
+    
+    if inpt_populacao_a <= inpt_populacao_b:
         contador += 1
     else:
         ano_final = ano_inicio + contador
-        print(f"População 'A': {populacao_a:.2f}")
-        print(f"População 'B': {populacao_b:.2f}")
+        print(f"População 'A': {inpt_populacao_a:.2f}")
+        print(f"População 'B': {inpt_populacao_b:.2f}")
         print(f"Ano que ultrapassa : {ano_final}")
-        valor = False
+        inpt_populacao_a = inpt_populacao_b = taxa_crescimento_de_a = taxa_crescimento_de_b =  0
+        aumento_de_a = aumento_de_b = contador = 0
     
+
+    
+
