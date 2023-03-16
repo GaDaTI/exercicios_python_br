@@ -9,7 +9,7 @@ metros = int(input("Digite o valor em metros: "))
 valor_conversao = metros * 100
 
 # Saida de dados:
-print(f"O valor de {metros} metrpos corresponde ao valor de {valor_conversao} centimetros")
+print(f"O valor de {metros} metros corresponde ao valor de {valor_conversao} centimetros.")
 
 
 

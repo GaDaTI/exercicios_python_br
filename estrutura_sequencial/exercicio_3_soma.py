@@ -1,5 +1,6 @@
 """
-3 - Faça um Programa que peça dois números e imprima a soma.
+3 - Faça um Programa que peça dois números e 
+imprima a soma.
 """
 
 # Entrada de dados
