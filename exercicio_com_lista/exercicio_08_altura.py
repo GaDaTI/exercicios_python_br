@@ -7,7 +7,7 @@ ordem inversa a ordem lida.
 lista = []
 lista_pessoa = []
 # Entrada de dados
-for _ in range(1, 5):
+for _ in range(0, 5):
     for index in range(2):
         if index == 0:
             idade = int(input("Digite a sua idade:"))
@@ -17,14 +17,20 @@ for _ in range(1, 5):
             altura = float(input("Digite sua altura: "))
             lista.append(altura)
             lista_pessoa.append(lista)
-            lista=0
+            lista=[]
     print()
 
-for dados in lista:
-    contador += 1
-    for idade, altura in enumerate(dados):
-        pessoa = f"A pessoa {contador} posui a idade de {idade} anos e altura de {altura:.2f} metros."
-
-    print(pessoa)
+contador = 0
+for index, dados in enumerate(lista_pessoa):
+    index += 1 
+    for _ in dados:
+        contador += 1
+        if contador == 1:
+            pessoa = f"A {index}º pessoa posui a idade de {dados[0]} anos e altura de {dados[1]} metros."
+            print(pessoa)
+        else:
+            contador=0
+            pass
+    
     
 
