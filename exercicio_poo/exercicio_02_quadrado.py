@@ -1,8 +1,8 @@
 """
-Exemplo:
->>>#Teste
->>> qudra_escolar = Quadrado()
->>> quadra_escolar.tamanho = None
->>>print(quadra_escolar.tamanho(5))
-"""
+Classe Quadrado
 
+    Exemplo:
+    >>> # Teste de classe
+    >>> quadra_da_escola  =  Quadrado( )
+    >>>  quadra_da_escola.tamanho
+"""
