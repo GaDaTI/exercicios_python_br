@@ -3,12 +3,12 @@
 
 Atributos: Cor, circunferência, material
 Métodos: trocaCor e mostraCor
+
+>>> # Teste de classe
+>>> bola_futsal = Bola( )
+
 """
 class Bola:
-    """
-    >>> # Teste de classe
-    >>> bola_futsal = Bola( )
-    """
 
     def __init__(self, cor = 'Azul', circunferencia= None, material= None,):
         self.cor = cor
@@ -29,5 +29,4 @@ if  __name__  ==  '__main__' :
     print(f"Metodo mostra a cor : {bola_futsal.mostrar_cor()}")
     bola_futsal.cor = "branca "
     print(f"Metodo mostra a cor : {bola_futsal.mostrar_cor()}")
-
 
