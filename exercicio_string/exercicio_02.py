@@ -5,10 +5,9 @@ Dica: lembre−se que ao informar o nome o usuário pode digitar letras maiúscu
 """
 nome = input("Digite seu nome : ")
 
-for  index in range(len(nome):
-       index= -1
-       print(nome[index])
-       index -= 1
+
+print(nome[::-1], end="")
+
 
 
 
