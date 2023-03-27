@@ -8,5 +8,15 @@ ou não.
 
 frase = input("Digite uma frase: ").lower()
 
-frase_sem_espaco = ''.join(frase.split(' '))
-print(frase_sem_espaco)
+frase_1 = ''.join(frase.split(' '))
+
+frase_2 = frase_1[ : :  -1]
+
+if frase_1 == frase_2:
+    print("Palíndromo.")
+else:
+    print("Não é um palíndromo.")
+
+
+
+
