@@ -24,9 +24,15 @@ for cpf_numeros  in numeros :
 
 print(lista)
 #Passo: Some o resultado das multiplicações.
-
+soma_das_multiplicações = sum(lista)
+print(soma_das_multiplicações)
 
 #Passo: Divida a soma por 11 e anote o resto da divisão.
+divisao_por_11 = soma_das_multiplicações / 11
+resto_divisao_por_11 = soma_das_multiplicações % 11
+print(f"{divisao_por_11:.2f}")
+print(f"{resto_divisao_por_11}")
+
 
 #Passo: Se o resto da divisão for igual a 0 ou 1, o dígito verificador (os dois últimos dígitos do CPF) deve ser igual a 0. Se o resto da divisão for maior que 1, o dígito verificador deve ser igual a 11 menos o resto da divisão.
 
