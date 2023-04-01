@@ -12,18 +12,16 @@ with open('relatorio.txt', 'r') as arquivo:
 with open('relatorio_editado', 'w') as arquivo :
     cabecalho = '[Endereços válidos:]'
     arquivo.writelines(f'{cabecalho:}\n')
-    for ip_str in lista:
-        print(type(ip_str))
-        ip_numero = int(ip_str)
-        print(type(ip_numero))
-        #tamanho = len(ip_str.split('.'))
-        #if tamanho == 4:
-        #    if ip_numero >= 0 or ip_numero < 255:
-        #        arquivo.writelines(ip_str)
+    for indice, ips  in enumerate(lista):
+        ips = ips.split('.')
+        for numero in ips:
+            numero = int(numero)
+            if  0 < numero > 255 and contador < 4:
 
-        #print(tamanho)
-        #print(len(tamanho))
-        #print(type(tamanho))
+
+
+
+
 
 
 
