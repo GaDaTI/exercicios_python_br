@@ -1,45 +1,39 @@
-""""
+"""
 Classe Bola: Crie uma classe que modele uma bola:
 
 Atributos: Cor, circunferência, material
 Métodos: trocaCor e mostraCor
 
->>> bola_futsal = Bola()
->>> bola_futsal.mostrar_cor()
-'Azul'
+>>> bola_futsal = Bola('Azul', 123, 'couro')
+>>> bola_futsal.cor
+Azul
 >>> bola_futsal.circunferencia
-150
+123
 >>> bola_futsal.material
-'Couro'
->>> bola_futsal.troca_cor('Verde')
->>> bola_futsal.nova_cor
-'Verde'
->>> bola_futsal.mostrar_cor()
-'Verde'
+couro
+>>> bola_futsal.trocar_de_cor('Rosa')
 
+>>> bola_futsal.mostrar_cor()
+Rosa
+>>> bola_futsal.trocar_de_cor('Amarelo')
+>>> bola_futsal.mostrar_cor()
+Amarelo
 """
 
 
 class Bola:
+    def __init__(self, cor, circunferencia, material):
+        self.cor = cor
+        self.material = material
+        self.circunferencia = circunferencia
 
-    def __init__(self):
-        self.cor = 'Azul'
-        self.nova_cor = 'Verde'
-        self.material = 'Couro'
-        self.circunferencia = 150
-
+    def trocar_de_cor(self, outra_cor):
+        self.cor = outra_cor
 
     def mostrar_cor(self):
-        if self.cor != self.nova_cor:
-            return self.nova_cor
-        else:
-            return self.cor
-
-    def troca_cor(self, nova_cor):
-        self.nova_cor = nova_cor
+        return self.cor
 
 
-
-
-    
-
+if __name__ == '__main__':
+    bola_futsal = Bola('Azul', 123, 'couro')
+    print(bola_futsal.cor)
